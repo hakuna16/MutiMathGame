@@ -1,6 +1,12 @@
 function startGame() {
-  const messageElement = document.getElementById("message");
-  messageElement!.innerText = "Welcome to multimath game application";
+  let playerName = "Rituj";
+  logPlayer(playerName);
+  // starting a new game
+  var messagesElement = document.getElementById("messages");
+  messagesElement!.innerText = "Welcome to MultiMath! Starting new game...";
 }
 
+function logPlayer(name: string) {
+  console.log(`Player name is ${name}`);
+}
 document.getElementById("startGame")!.addEventListener("click", startGame);
